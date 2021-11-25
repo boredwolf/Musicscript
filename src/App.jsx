@@ -27,6 +27,7 @@ function App() {
         <Route path="/connexion" element={<Connexion/>}> </Route>
         <Route path="/formules" element={<Formules/>}> </Route>
         <Route path="/choice" element={<Choice/>}> </Route>
+              
         <Route path="/location" element={<Location/>} />
       </Routes>
     </div>
