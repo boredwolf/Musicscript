@@ -10,6 +10,7 @@ import Navbar from './Components/Navbar'
 import Connexion from './Components/Connexion'
 
 import Location from './Components/Location'
+import Formules from './Components/Formules';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/home"></Route>
         <Route path="/connexion" element={<Connexion/>}> </Route>
+        <Route path="/formules" element={<Formules/>}> </Route>
         <Route exact path="/">
               
         </Route>
