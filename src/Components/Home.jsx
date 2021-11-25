@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+import React from "react";
+
+>>>>>>> c0bb187ad418e1302c5d3c11933a59b8e277bdaa
 const Home = () => {
   return (
     <>
@@ -25,9 +30,13 @@ const Home = () => {
               </div>
 
               <div>
+<<<<<<< HEAD
                   <Link to ="/connexion">
                 <button
                 
+=======
+                <button
+>>>>>>> c0bb187ad418e1302c5d3c11933a59b8e277bdaa
                   type="submit"
                   class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
@@ -48,7 +57,10 @@ const Home = () => {
                   </span>
                   Sign up
                 </button>
+<<<<<<< HEAD
                 </Link>
+=======
+>>>>>>> c0bb187ad418e1302c5d3c11933a59b8e277bdaa
               </div>
             </form>
           </div>
