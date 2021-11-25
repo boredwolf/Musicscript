@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Connexion() {
     return (
         <div class="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">
   <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
-    <h1 class="font-bold text-center text-2xl mb-5">Your Logo</h1>  
+  <img class="h-24 m-auto" src="src/Assets/logoboxifypng.png" alt="logo"/> 
     <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
       <div class="px-5 py-7">
         <label class="font-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
@@ -16,6 +17,10 @@ export default function Connexion() {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
+        </button>
+        <button type="button" class="mt-2 flex justify-center transition duration-200 bg-gray-800 hover:bg-gray-600 focus:bg-gray-700 focus:shadow-sm focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 text-green-500 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
+            <span class="inline-block mr-2">Connect with Spotify</span>
+            <img class="h-6 max-w-none" src="src/Assets/spotify.png" alt="spotify-logo"/>
         </button>
       </div>
       <div class="py-5">
@@ -46,7 +51,7 @@ export default function Connexion() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block align-text-top">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-                <span class="inline-block ml-1">Back to your-app.com</span>
+                <Link to="/"><span class="inline-block ml-1">Back to home</span></Link>
             </button>
           </div>
         </div>

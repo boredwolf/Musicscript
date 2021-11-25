@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css'
 import Navbar from './Components/Navbar'
+import Connexion from './Components/Connexion'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/home"></Route>
-        <Route path='/connexion'></Route>
+        <Route path="/connexion" element={<Connexion/>}> </Route>
       </Routes>
     </div>
     </Router>
