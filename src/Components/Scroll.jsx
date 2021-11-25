@@ -17,8 +17,11 @@ import Connexion from "./Connexion";
 import Location from "./Location";
 import Formules from "./Formules";
 import Choice from "./Choice";
+import useScrollBlock from "./useScrollBlock";
 
 const Scroll = () => {
+    const [blockScroll, allowScroll] = useScrollBlock();
+    blockScroll ()
   return (
     <div>
       <ScrollContainer>
@@ -28,7 +31,8 @@ const Scroll = () => {
           </Animator>
         </ScrollPage>
 
-        <ScrollPage page={2}>
+
+        <ScrollPage page={1}>
           <Animator animation={ZoomInScrollOut}>
             <Formules />
           </Animator>
