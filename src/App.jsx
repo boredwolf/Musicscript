@@ -27,7 +27,6 @@ function App() {
         <Route path="/formules" element={<Formules/>}> </Route>
         <Route path="/choice" element={<Choice/>}> </Route>
         <Route exact path="/">
-              
         </Route>
         <Route path="/location" element={<Location/>} />
       </Routes>
