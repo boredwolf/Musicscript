@@ -31,7 +31,18 @@ function Choice() {
   const showHiphop = () => {
     setComponentHiphop(!componentHiphop);
   };
-  
+
+  const [componentReggae, setComponentReggae] = useState(false);
+  const showReggae = () => {
+    setComponentReggae(!componentReggae);
+  };
+
+  const [componentRap, setComponentRap] = useState(false);
+  const showRap = () => {
+    setComponentRap(!componentRap);
+  };
+
+
   return (
     <div>
       <div className="flex justify-between w-4/5 m-auto mt-10">
@@ -61,14 +72,23 @@ function Choice() {
         onClick={showHiphop}>
           Hip-Hop
         </button>
-        <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 "
+        onClick={showReggae}>
           Reggae
         </button>
-        <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 "
+        onClick={showReggae}>
           Rap
         </button>
       </div>
       <div> {componentRock ? <Rock /> : null}</div>
+      <div> {componentPop ? <Pop /> : null}</div>
+      <div> {componentJazz ? <Jazz /> : null}</div>
+      <div> {componentElectro ? <Electro /> : null}</div>
+      <div> {componentMetal ? <Metal /> : null}</div>
+      <div> {componentHiphop ? <Hiphop /> : null}</div>
+      <div> {componentReggae ? <Reggae /> : null}</div>
+      <div> {componentRap ? <Rap /> : null}</div>
     </div>
   );
 }
@@ -95,7 +115,98 @@ function Pop() {
     return (
       <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
-          Rock is the best !!!
+          Pop is the best !!!
+        </h1>
+        <img
+          className="w-5/6 h-96 rounded-lg"
+          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          alt="rock-concert"
+        />
+        <p className="">Le rock c'est cool</p>
+      </div>
+    );
+  }
+
+  function Jazz() {
+    return (
+      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
+          Jazz is the best !!!
+        </h1>
+        <img
+          className="w-5/6 h-96 rounded-lg"
+          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          alt="rock-concert"
+        />
+        <p className="">Le rock c'est cool</p>
+      </div>
+    );
+  }
+  function Electro() {
+    return (
+      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
+          Electro is the best !!!
+        </h1>
+        <img
+          className="w-5/6 h-96 rounded-lg"
+          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          alt="rock-concert"
+        />
+        <p className="">Le rock c'est cool</p>
+      </div>
+    );
+  }
+  function Metal() {
+    return (
+      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
+          Metal is the best !!!
+        </h1>
+        <img
+          className="w-5/6 h-96 rounded-lg"
+          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          alt="rock-concert"
+        />
+        <p className="">Le rock c'est cool</p>
+      </div>
+    );
+  }
+  function Hiphop() {
+    return (
+      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
+          Hip-Hop is the best !!!
+        </h1>
+        <img
+          className="w-5/6 h-96 rounded-lg"
+          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          alt="rock-concert"
+        />
+        <p className="">Le rock c'est cool</p>
+      </div>
+    );
+  }
+  function Reggae() {
+    return (
+      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
+          Reggae is the best !!!
+        </h1>
+        <img
+          className="w-5/6 h-96 rounded-lg"
+          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          alt="rock-concert"
+        />
+        <p className="">Le rock c'est cool</p>
+      </div>
+    );
+  }
+  function Rap() {
+    return (
+      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
+          Rap is the best !!!
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
