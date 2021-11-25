@@ -1,9 +1,9 @@
 import React from "react";
+import { Navbar } from "reactstrap";
 
-const Home = () => {
+const Home = ({HomeToConnection}) => {
   return (
-    <>
-      <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
+    <>     <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
         <h1 className="text-6xl font-Josefin   text-right text-white text-shadow w-screen  pr-8    ">
           Welcome <span>here !</span>
         </h1>
@@ -27,6 +27,7 @@ const Home = () => {
 
               <div>
                 <button
+                onClick = {HomeToConnection}
                   type="submit"
                   class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >

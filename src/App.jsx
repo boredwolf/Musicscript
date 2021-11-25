@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Routes, Router, Route } from "react-router-dom";
 import {
   Animator,
   ScrollContainer,
@@ -20,40 +21,28 @@ import Connexion from "./Components/Connexion";
 import Location from "./Components/Location";
 import Home from "./Components/Home";
 import Formules from "./Components/Formules";
+import { Nav } from "reactstrap";
+import Scroll from "./Components/Scroll";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isHome, setIsHome] = useState(true);
+  const [isConnect, setIsConnect] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
 
+  function HomeToConnection() {
+    setIsHome(!isHome);
+    setIsConnect(!isConnect);
+  }
+  function test2() {
+    setIsConnect(!isConnect);
+    setIsScroll(!isScroll);
+  }
   return (
     <div>
-    <Navbar />
-    <ScrollContainer>
-      <ScrollPage page={0}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-          <Home />
-        </Animator>
-      </ScrollPage>
-
-      <ScrollPage page={1}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-          <Connexion />
-        </Animator>
-      </ScrollPage>
-
-    
-      <ScrollPage page={2}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-          <Location />
-        </Animator>
-      </ScrollPage>
-
      
-      <ScrollPage page={3}>
-        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-          <Formules />
-        </Animator>
-      </ScrollPage>
-    </ScrollContainer>
+      {isHome ? <Home HomeToConnection={HomeToConnection}/> : null}
+      {isConnect ? <Connexion test={test2} /> : null}
+      {isScroll ? <Scroll /> : null}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './Navbar'
 import Location from './Location';
 import Connexion from './Connexion';
-
+import { NavLink} from 'react-router-dom'
 const ButtonBottom = (props) => {
     return (
         <div className ="scroll-bottom">
