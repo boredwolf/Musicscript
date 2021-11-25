@@ -1,45 +1,61 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import './App.css'
-import Navbar from './Components/Navbar'
-import Connexion from './Components/Connexion'
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  batch,
+  Fade,
+  FadeIn,
+  Move,
+  MoveIn,
+  MoveOut,
+  Sticky,
+  StickyIn,
+  ZoomIn,
+} from "react-scroll-motion";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Connexion from "./Components/Connexion";
 
-import Location from './Components/Location'
-<<<<<<< HEAD
-import Home from './Components/Home';
-=======
-import Formules from './Components/Formules';
->>>>>>> develop
+import Location from "./Components/Location";
+import Home from "./Components/Home";
+import Formules from "./Components/Formules";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <Router>
-    <div className="min-h-screen">
-      <Navbar />
-      <Routes>
-<<<<<<< HEAD
-        <Route exact path="/" element={<Home/>} />
-        
-=======
-        <Route path="/home"></Route>
-        <Route path="/connexion" element={<Connexion/>}> </Route>
-        <Route path="/formules" element={<Formules/>}> </Route>
-        <Route exact path="/">
-              
-        </Route>
->>>>>>> develop
-        <Route path="/location" element={<Location/>} />
-      </Routes>
+    <div>
+    <Navbar />
+    <ScrollContainer>
+      <ScrollPage page={0}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          <Home />
+        </Animator>
+      </ScrollPage>
+
+      <ScrollPage page={1}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          <Connexion />
+        </Animator>
+      </ScrollPage>
+
+    
+      <ScrollPage page={2}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          <Location />
+        </Animator>
+      </ScrollPage>
+
+     
+      <ScrollPage page={3}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          <Formules />
+        </Animator>
+      </ScrollPage>
+    </ScrollContainer>
     </div>
-    </Router>
-  )
+  );
 }
 
-export default App
+export default App;
