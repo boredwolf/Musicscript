@@ -81,6 +81,7 @@ function Choice() {
           Rap
         </button>
       </div>
+      <div className="flex w-screen justify-center">
       <div> {componentRock ? <Rock /> : null}</div>
       <div> {componentPop ? <Pop /> : null}</div>
       <div> {componentJazz ? <Jazz /> : null}</div>
@@ -89,6 +90,7 @@ function Choice() {
       <div> {componentHiphop ? <Hiphop /> : null}</div>
       <div> {componentReggae ? <Reggae /> : null}</div>
       <div> {componentRap ? <Rap /> : null}</div>
+      </div>
     </div>
   );
 }
@@ -97,7 +99,7 @@ export default Choice;
 
 function Rock() {
   return (
-    <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+    <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
       <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
         Rock is the best !!!
       </h1>
@@ -113,7 +115,7 @@ function Rock() {
 
 function Pop() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Pop is the best !!!
         </h1>
@@ -129,7 +131,7 @@ function Pop() {
 
   function Jazz() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Jazz is the best !!!
         </h1>
@@ -144,7 +146,7 @@ function Pop() {
   }
   function Electro() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Electro is the best !!!
         </h1>
@@ -159,7 +161,7 @@ function Pop() {
   }
   function Metal() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Metal is the best !!!
         </h1>
@@ -174,7 +176,7 @@ function Pop() {
   }
   function Hiphop() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Hip-Hop is the best !!!
         </h1>
@@ -189,7 +191,7 @@ function Pop() {
   }
   function Reggae() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Reggae is the best !!!
         </h1>
@@ -204,7 +206,7 @@ function Pop() {
   }
   function Rap() {
     return (
-      <div className="m-auto w-1/3 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+        <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
         <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
           Rap is the best !!!
         </h1>

@@ -34,6 +34,7 @@ const Scroll = () => {
           </Animator>
         </ScrollPage>
       </ScrollContainer>
+      
     </div>
   );
 };
