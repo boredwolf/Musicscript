@@ -1,16 +1,32 @@
-import React from 'react'
+import React from "react";
 
 export default function Choice() {
-    return (
-        <div>
-            <button class="rounded-lg px-4 py-2 bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">Primary</button>
-      <button class="rounded-lg px-4 py-2 bg-gray-600 text-gray-100 hover:bg-gray-700 duration-300">Secondary</button>
-      <button class="rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Success</button>
-      <button class="rounded-lg px-4 py-2 bg-red-600 text-red-100 hover:bg-red-700 duration-300">Danger</button>
-      <button class="rounded-lg px-4 py-2 bg-yellow-500 hover:bg-yellow-600 duration-300">Warning</button>
-      <button class="rounded-lg px-4 py-2 bg-green-300 hover:bg-green-400 duration-300">Info</button>
-      <button class="rounded-lg px-4 py-2 bg-gray-200 hover:bg-gray-300 duration-300">Light</button>
-      <button class="rounded-lg px-4 py-2 bg-gray-900 text-gray-100">Dark</button>
-        </div>
-    )
+  return (
+      <div className="flex justify-between w-4/5 m-auto mt-10">
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400 transition duration-700 ease-in-out transform hover:scale-125">
+        Rock
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Pop
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Jazz
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Electro
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Metal
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Hip-Hop
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Reggae
+      </button>
+      <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 ">
+        Rap
+      </button>
+    </div>
+  );
 }

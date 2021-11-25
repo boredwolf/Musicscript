@@ -11,6 +11,7 @@ import Connexion from './Components/Connexion'
 
 import Location from './Components/Location'
 import Formules from './Components/Formules';
+import Choice from './Components/Choice';
 
 function App() {
   const [count, setCount] = useState(0)
