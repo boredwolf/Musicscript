@@ -29,7 +29,7 @@ function App() {
   const [isConnect, setIsConnect] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
 
-  function HomeToConnection() { </Route>
+  function HomeToConnection() { 
     setIsHome(!isHome);
     setIsConnect(!isConnect);
   }

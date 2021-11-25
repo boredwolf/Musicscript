@@ -26,6 +26,7 @@ const Home = ({HomeToConnection}) => {
               </div>
 
               <div>
+                  <a to ="/connexion">
                 <button
                 onClick = {HomeToConnection}
                   type="submit"
@@ -48,6 +49,28 @@ const Home = ({HomeToConnection}) => {
                   </span>
                   Sign up
                 </button>
+                </a>
+              </div>
+              <div class="text-sm">
+                <a
+                  href="#"
+                  class="font-medium text-white "
+                >
+                  Or go anonymously
+                </a>
+              </div>
+              <div>
+                  <a to ="/choice">
+                <button
+                
+                  class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                 
+                  </span>
+                   Get started
+                </button>
+                </a>
               </div>
             </form>
           </div>
