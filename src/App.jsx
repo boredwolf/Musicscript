@@ -17,12 +17,10 @@ function App() {
     <div className="min-h-screen">
       <Navbar />
       <Routes>
-        <Route path="/home">
+        <Route exact path="/">
         
         </Route>
-        <Route path="/Location">
-          <Location/>
-        </Route>
+        <Route path="/location" element={<Location/>} />
       </Routes>
     </div>
     </Router>

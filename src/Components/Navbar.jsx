@@ -7,8 +7,6 @@ const Navbar = () => {
 
     return (
 <>
-<div class="flex flex-wrap  h-screen">
-  <section class="relative mx-auto">
     <nav class="flex justify-between bg-gray-900 text-white w-screen">
       <div class="px-5 xl:px-12  flex w-full items-center">
         <a class="text-3xl font-bold font-heading" href="#">
@@ -35,8 +33,6 @@ const Navbar = () => {
     
     </nav>
     
-  </section>
-</div>
 
 </>
     );
