@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/">
-        
+              
         </Route>
         <Route path="/location" element={<Location/>} />
       </Routes>
