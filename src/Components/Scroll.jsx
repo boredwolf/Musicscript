@@ -10,25 +10,26 @@ import {
   MoveOut,
   Sticky,
   StickyIn,
-  ZoomIn,
+  ZoomInScrollOut,
 } from "react-scroll-motion";
 import Home from "./Home";
 import Connexion from "./Connexion";
 import Location from "./Location";
 import Formules from "./Formules";
+import Choice from "./Choice";
 
 const Scroll = () => {
   return (
     <div>
       <ScrollContainer>
         <ScrollPage page={0}>
-          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-            <Location />
+          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -400))}>
+           <Location />
           </Animator>
         </ScrollPage>
 
-        <ScrollPage page={1}>
-          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+        <ScrollPage page={2}>
+          <Animator animation={ZoomInScrollOut}>
             <Formules />
           </Animator>
         </ScrollPage>

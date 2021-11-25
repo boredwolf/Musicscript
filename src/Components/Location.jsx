@@ -19,7 +19,7 @@ const Location = () => {
         <button onClick={(event) => mapscreen(event.target.value)}  value="toulouse"  className="m-2 px-4 py-2 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 transition duration-500 ease-in-out ">Toulouse</button>
         
       </div>
-      <div className="mx-auto w-6/12 mt-28 overflow-hidden rounded-xl">
+      <div className="mx-auto w-5/5 mt-28 overflow-hidden rounded-xl">
         <img src={srcmap} alt="maps"/>
       </div>
     </div>
