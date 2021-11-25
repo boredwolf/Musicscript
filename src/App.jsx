@@ -19,13 +19,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-
-          <Route path="/home"></Route>
-          <Route path="/connexion" element={<Connexion />}>
-            {" "}
-          </Route>
+          <Route path="/connexion" element={<Connexion />}/>
           <Route path="/formules" element={<Formules />}>
-            {" "}
           </Route>
           <Route exact path="/"></Route>
           <Route path="/location" element={<Location />} />
