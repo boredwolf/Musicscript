@@ -8,6 +8,7 @@ import {
 import './App.css'
 import Navbar from './Components/Navbar'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -16,9 +17,8 @@ function App() {
     <div className="min-h-screen">
       <Navbar />
       <Routes>
-        <Route path="/home">
-        
-        </Route>
+        <Route path="/home"></Route>
+        <Route path='/connexion'></Route>
       </Routes>
     </div>
     </Router>
