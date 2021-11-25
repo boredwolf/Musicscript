@@ -31,8 +31,13 @@ const Scroll = () => {
           </Animator>
         </ScrollPage>
 
-
         <ScrollPage page={1}>
+          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+            <Choice />
+          </Animator>
+        </ScrollPage>
+
+        <ScrollPage page={2}>
           <Animator animation={ZoomInScrollOut}>
             <Formules />
           </Animator>
