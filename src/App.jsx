@@ -1,14 +1,4 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Connexion from "./Components/Connexion";
-
-import Location from "./Components/Location";
-
-import Home from "./Components/Home";
-
-import Formules from "./Components/Formules";
 import { useState } from 'react'
 import {
   BrowserRouter as Router,
@@ -37,6 +27,8 @@ function App() {
         <Route path="/connexion" element={<Connexion/>}> </Route>
         <Route path="/formules" element={<Formules/>}> </Route>
         <Route path="/choice" element={<Choice/>}> </Route>
+              
+        </Route>
         <Route path="/location" element={<Location/>} />
       </Routes>
     </div>
