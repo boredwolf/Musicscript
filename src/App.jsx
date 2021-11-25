@@ -10,11 +10,8 @@ import Navbar from './Components/Navbar'
 import Connexion from './Components/Connexion'
 
 import Location from './Components/Location'
-<<<<<<< HEAD
 import Home from './Components/Home';
-=======
 import Formules from './Components/Formules';
->>>>>>> develop
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,17 +21,14 @@ function App() {
     <div className="min-h-screen">
       <Navbar />
       <Routes>
-<<<<<<< HEAD
         <Route exact path="/" element={<Home/>} />
         
-=======
         <Route path="/home"></Route>
         <Route path="/connexion" element={<Connexion/>}> </Route>
         <Route path="/formules" element={<Formules/>}> </Route>
         <Route exact path="/">
               
         </Route>
->>>>>>> develop
         <Route path="/location" element={<Location/>} />
       </Routes>
     </div>
