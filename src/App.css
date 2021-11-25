@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer components {
+
+  
  
   #root{
     background-image: linear-gradient(135deg, rgb(121, 121, 121),rgb(68, 68, 68)),linear-gradient(45deg, rgb(27, 3, 180) 0%, rgb(27, 3, 180) 4%,rgb(62, 25, 181) 4%, rgb(62, 25, 181) 11%,rgb(97, 46, 183) 11%, rgb(97, 46, 183) 18%,rgb(131, 68, 184) 18%, rgb(131, 68, 184) 22%,rgb(166, 89, 186) 22%, rgb(166, 89, 186) 28%,rgb(165,64,150) 28%, rgb(165,64,150) 100%),linear-gradient(135deg, rgb(27, 3, 180) 0%, rgb(27, 3, 180) 4%,rgb(62, 25, 181) 4%, rgb(62, 25, 181) 11%,rgb(97, 46, 183) 11%, rgb(97, 46, 183) 18%,rgb(131, 68, 184) 18%, rgb(131, 68, 184) 22%,rgb(166, 89, 186) 22%, rgb(166, 89, 186) 28%,rgb(165,64,150) 28%, rgb(165,64,150) 100%); background-blend-mode:overlay,overlay,normal;
@@ -10,4 +16,24 @@
 
   .blue-txt{
     color: #1ac5cd
+  }
+
+  .bg-blue{
+    background-color: #1ac5cd;
+  }
+
+  .text-shadow {
+   
+
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  }  .licorne{
+    height: fit-content;
+  }
+
+  h1{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2{
+    font-family: 'Josefin Sans', sans-serif;
   }

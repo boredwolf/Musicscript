@@ -8,10 +8,10 @@ import {
 import './App.css'
 import Navbar from './Components/Navbar'
 import Connexion from './Components/Connexion'
-
 import Location from './Components/Location'
+import Home from './Components/Home';
 import Formules from './Components/Formules';
-import Choice from './Components/Choice';
+
 
 function App() {
   const [count, setCount] = useState(0)
