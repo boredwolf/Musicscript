@@ -15,7 +15,7 @@ const Navbar = () => {
          <img class="h-24" src="src/Assets/logoboxifypng.png" alt="logo"/> 
           
         </a>
-        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12 space-x-4 blue-txt">
           <li><a class="hover:text-gray-200" href="#">Home</a></li>
           <li><a class="hover:text-gray-200" href="#">Category</a></li>
           <li><a class="hover:text-gray-200" href="#">Collections</a></li>
