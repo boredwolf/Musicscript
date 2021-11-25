@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
-const Home = () => {
+import React from "react";
+import { Navbar } from "reactstrap";
+
+const Home = ({HomeToConnection}) => {
   return (
-    <>
-      <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
+    <>     <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
         <h1 className="text-6xl font-Josefin   text-right text-white text-shadow w-screen  pr-8    ">
           Welcome <span>here !</span>
         </h1>
@@ -25,9 +26,10 @@ const Home = () => {
               </div>
 
               <div>
-                  <Link to ="/connexion">
+                  <a to ="/connexion">
                 <button
-                
+                onClick = {HomeToConnection}
+                  type="submit"
                   class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   <span class="absolute left-0 inset-y-0 flex items-center pl-3">
@@ -47,7 +49,7 @@ const Home = () => {
                   </span>
                   Sign up
                 </button>
-                </Link>
+                </a>
               </div>
               <div class="text-sm">
                 <a
@@ -58,7 +60,7 @@ const Home = () => {
                 </a>
               </div>
               <div>
-                  <Link to ="/choice">
+                  <a to ="/choice">
                 <button
                 
                   class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -68,7 +70,7 @@ const Home = () => {
                   </span>
                    Get started
                 </button>
-                </Link>
+                </a>
               </div>
             </form>
           </div>
