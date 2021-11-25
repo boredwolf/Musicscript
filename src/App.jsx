@@ -1,38 +1,50 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { Routes, Router, Route } from "react-router-dom";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import './App.css'
-import Navbar from './Components/Navbar'
-import Connexion from './Components/Connexion'
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  batch,
+  Fade,
+  FadeIn,
+  Move,
+  MoveIn,
+  MoveOut,
+  Sticky,
+  StickyIn,
+  ZoomIn,
+} from "react-scroll-motion";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Connexion from "./Components/Connexion";
 
-import Location from './Components/Location'
-import Home from './Components/Home';
-import Formules from './Components/Formules';
+import Location from "./Components/Location";
+import Home from "./Components/Home";
+import Formules from "./Components/Formules";
+import { Nav } from "reactstrap";
+import Scroll from "./Components/Scroll";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isHome, setIsHome] = useState(true);
+  const [isConnect, setIsConnect] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
 
+  function HomeToConnection() { </Route>
+    setIsHome(!isHome);
+    setIsConnect(!isConnect);
+  }
+  function test2() {
+    setIsConnect(!isConnect);
+    setIsScroll(!isScroll);
+  }
   return (
-    <Router>
-    <div className="min-h-screen">
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home/>} />
-        
-        
-        <Route path="/connexion" element={<Connexion/>}> </Route>
-        <Route path="/formules" element={<Formules/>}> </Route>
-      
-       
-        <Route path="/location" element={<Location/>} />
-      </Routes>
+    <div>
+     
+      {isHome ? <Home HomeToConnection={HomeToConnection}/> : null}
+      {isConnect ? <Connexion test={test2} /> : null}
+      {isScroll ? <Scroll /> : null}
     </div>
-    </Router>
-  )
+  );
 }
 
-export default App
+export default App;

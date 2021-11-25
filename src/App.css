@@ -30,6 +30,11 @@
     height: fit-content;
   }
 
+  .navbar {
+    position: fixed;
+    z-index: 999;
+  }
+
   h1{
     font-family: 'Montserrat', sans-serif;
   }
