@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ButtonBottom from './ButtonBottom';
 
 export default function Connexion() {
     return (
@@ -55,6 +56,7 @@ export default function Connexion() {
             </button>
           </div>
         </div>
+        <ButtonBottom left ={"/"} />
       </div>
   </div>
 </div>

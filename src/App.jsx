@@ -1,33 +1,48 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
-  Link
+  useHistory
 } from "react-router-dom";
+import { useLocation } from "react-router"
+
 import './App.css'
 import Navbar from './Components/Navbar'
 import Connexion from './Components/Connexion'
 
 import Location from './Components/Location'
 
+
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
+  let history = useHistory();
+
+  useEffect(() => {
+   const handleScrollToElement = (e) => {
+     console.log(e.wheelDeltaY);
+   }
+
+   window.addEventListener('wheel', handleScrollToElement)
+  }, [history])
 
   return (
-    <Router>
+    <Router >
     <div className="min-h-screen">
       <Navbar />
-      <Routes>
-        <Route path="/home"></Route>
+      <Switch location={location} key={location.pathname} >
+        
         <Route path="/connexion" element={<Connexion/>}> </Route>
         <Route exact path="/">
               
         </Route>
         <Route path="/location" element={<Location/>} />
-      </Routes>
+      </Switch>
+      
+      
     </div>
     </Router>
+    
   )
 }
 
