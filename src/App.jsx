@@ -23,6 +23,7 @@ function App() {
         <Route path="/home"></Route>
         <Route path="/connexion" element={<Connexion/>}> </Route>
         <Route path="/formules" element={<Formules/>}> </Route>
+        <Route path="/choice" element={<Choice/>}> </Route>
         <Route exact path="/">
               
         </Route>
