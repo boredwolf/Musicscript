@@ -5,11 +5,11 @@ export default function Formules() {
 
 <div className="w-screen">
 
-<h1 className="text-center w-5/6 mx-auto py-20 px-4 text-5xl font-extrabold text-gray-900">
+<h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
   Price range
 </h1>
-<hr className="mt-5 w-1/4 mx-auto"></hr>
-<p className="mt-5 text-xl text-black-800 text-center " >
+<hr className="w-1/4 mx-auto"></hr>
+<p className="text-xl text-black-800 text-center " >
   3 plans available matching your budget and your tastes 🎶
 </p>
 
