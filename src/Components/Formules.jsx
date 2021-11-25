@@ -8,8 +8,8 @@ export default function Formules() {
 <h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
   Price range
 </h1>
-<hr className="w-1/4 mx-auto"></hr>
-<p className="text-xl text-black-800 text-center " >
+<hr className="mt-4 w-1/4 mx-auto"></hr>
+<p className="mt-4 text-xl text-black-800 text-center " >
   3 plans available matching your budget and your tastes 🎶
 </p>
 
