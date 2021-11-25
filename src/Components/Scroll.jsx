@@ -16,6 +16,7 @@ import Home from "./Home";
 import Connexion from "./Connexion";
 import Location from "./Location";
 import Formules from "./Formules";
+import Choice from "./Choice";
 
 const Scroll = () => {
   return (
@@ -28,6 +29,12 @@ const Scroll = () => {
         </ScrollPage>
 
         <ScrollPage page={1}>
+          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+            <Choice />
+          </Animator>
+        </ScrollPage>
+
+        <ScrollPage page={2}>
           <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
             <Formules />
           </Animator>

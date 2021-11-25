@@ -39,16 +39,12 @@ function App() {
     setIsScroll(!isScroll);
   }
 
-  function HommeToChoice() {
-    setIsChoice(!isChoice);
-  }
   return (
     <div>
      
       {isHome ? <Home HomeToConnection={HomeToConnection}/> : null}
       {isConnect ? <Connexion test={test2} /> : null}
       {isScroll ? <Scroll /> : null}
-      {isChoice ? <Choice HommeToChoice={HommeToChoice}/> : null}
     </div>
   );
 }

@@ -44,7 +44,11 @@ function Choice() {
 
 
   return (
-    <div>
+    <div className="h-screen pt-10">
+        <h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
+  Select the kind of music you like
+</h1>
+<hr className="mt-4 w-1/4 mx-auto"></hr>
       <div className="flex justify-between w-4/5 m-auto mt-10">
         <button
           className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400 transition duration-700 ease-in-out transform hover:scale-125"
