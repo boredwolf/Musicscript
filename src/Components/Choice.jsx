@@ -111,9 +111,9 @@ function Choice() {
       <div className="flex flex-col items-center">
       <button className="mx-auto m-12 px-4 py-2 w-1/4 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 focus:bg-white focus:text-purple-700 transition duration-500 ease-in-out">Valider</button>
       <div className="flex flex-col items-center">
-      <button type="button" className="px-4 mt-2 flex justify-center w-96 self-end transition duration-200 bg-gray-800 hover:bg-gray-600 focus:bg-gray-700 focus:shadow-sm focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 text-green-500 w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
-            <span className="inline-block mr-2">Import directly your preferences from your Spotify</span>
-            <img className="h-6 max-w-none" src="src/Assets/spotify.png" alt="spotify-logo"/>
+      <button type="button" className="px-4 mt-2  flex justify-center items-center w-auto transition duration-200 bg-gray-800 hover:bg-gray-600 focus:bg-gray-700 focus:shadow-sm focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 text-green-500 py-2.5 rounded-lg shadow-sm hover:shadow-md text-center inline-block">
+            <span className="text-2xl inline-block mr-2">Import directly your preferences from your Spotify account</span>
+            <img className="h-8 max-w-none" src="src/Assets/spotify.png" alt="spotify-logo"/>
         </button>
         </div>
         </div>
