@@ -108,9 +108,7 @@ function Choice() {
         <div> {componentReggae ? <Reggae /> : null}</div>
         <div> {componentRap ? <Rap /> : null}</div>
       </div>
-<<<<<<< HEAD
       <button className=" mx-auto m-12 px-4 py-2 w-1/4 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 focus:bg-white focus:text-purple-700 transition duration-500 ease-in-out transition duration-500 ease-in-out transform hover:scale-125">Confirm</button>
-=======
       <div className="flex flex-col items-center">
       <button className="mx-auto m-12 px-4 py-2 w-1/4 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 focus:bg-white focus:text-purple-700 transition duration-500 ease-in-out">Valider</button>
       <div className="flex flex-col items-center">
@@ -120,7 +118,6 @@ function Choice() {
         </button>
         </div>
         </div>
->>>>>>> bcbeafb348f5e8c77accf139572475e18916e7f0
     </div>
   );
 }
