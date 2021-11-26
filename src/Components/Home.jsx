@@ -3,7 +3,7 @@ import { Navbar } from "reactstrap";
 
 const Home = ({HomeToConnection}) => {
   return (
-    <>     <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
+    <div className="w-screen h-screen background-main">     <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
         <h1 className="text-6xl font-Josefin   text-right text-white text-shadow w-screen  pr-8    ">
           Welcome <span>here !</span>
         </h1>
@@ -80,7 +80,7 @@ const Home = ({HomeToConnection}) => {
           musical scene through the subscription of your choice !
         </h2>
       </div>
-    </>
+    </div>
   );
 };
 
