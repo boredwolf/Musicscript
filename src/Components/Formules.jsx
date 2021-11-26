@@ -1,15 +1,15 @@
 import React from 'react'
 
-export default function Formules() {
+export default function Formules({ScrollToFinish}) {
     return (
 
 <div className="w-screen h-screen background-main">
 
-<h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
+<h1 className="text-center pt-12 w-5/6 mx-auto px-4 text-5xl font-extrabold text-white">
   Price range
 </h1>
 <hr className="mt-4 w-1/4 mx-auto"></hr>
-<p className="mt-4 text-xl text-black-800 text-center " >
+<p className="mt-4 text-xl text-white text-center " >
   3 plans available matching your budget and your tastes 🎶
 </p>
 
@@ -50,10 +50,10 @@ export default function Formules() {
       </li>
 
       <li className="flex space-x-3 py-2 mt-auto">
-        <a
-        href="#"
+        <div
+        onClick={ScrollToFinish}
         className=" block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-        >Subscribe</a>
+        >Subscribe</div>
       </li>
     </ul>
 
@@ -96,10 +96,10 @@ export default function Formules() {
       </li>
 
       <li className="flex space-x-3 py-2 mt-auto">
-        <a
-        href="#"
+        <div
+        onClick={ScrollToFinish}
         className=" block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-        >Subscribe</a>
+        >Subscribe</div>
       </li>
     </ul>
 
@@ -142,10 +142,10 @@ export default function Formules() {
       </li>
 
       <li className="flex space-x-3 py-2 mt-auto">
-        <a
-        href="#"
+        <div
+        onClick={ScrollToFinish}
         className=" block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
-        >Subscribe</a>
+        >Subscribe</div>
       </li>
     </ul>
 

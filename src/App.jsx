@@ -1,50 +1,42 @@
 import { useState } from "react";
-import { Routes, Router, Route } from "react-router-dom";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  ZoomIn,
-} from "react-scroll-motion";
 import "./App.css";
-import Navbar from "./Components/Navbar";
 import Connexion from "./Components/Connexion";
-import Choice from "./Components/Choice"
-import Location from "./Components/Location";
 import Home from "./Components/Home";
-import Formules from "./Components/Formules";
-import { Nav } from "reactstrap";
 import Scroll from "./Components/Scroll";
+import Finish from "./Components/Finish";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
   const [isConnect, setIsConnect] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
-  const [isChoice, setIsChoice] = useState(false);
+  const [isFinish, setIsFinish] = useState(false)
 
   function HomeToConnection() { 
     setIsHome(!isHome);
     setIsConnect(!isConnect);
   }
-  function test2() {
+  function ConnectToScroll() {
     setIsConnect(!isConnect);
     setIsScroll(!isScroll);
+  }
+
+  function ScrollToFinish() {
+    setIsScroll(!isScroll);
+    setIsFinish(!isFinish);
+  }
+
+  function FinishToHome() {
+    setIsFinish(!isFinish);
+    setIsHome(!isHome);
   }
 
   return (
     <div>
      
       {isHome ? <Home HomeToConnection={HomeToConnection}/> : null}
-      {isConnect ? <Connexion test={test2} /> : null}
-      {isScroll ? <Scroll /> : null}
+      {isConnect ? <Connexion ConnectToScroll={ConnectToScroll} /> : null}
+      {isScroll ? <Scroll ScrollToFinish={ScrollToFinish} /> : null}
+      {isFinish ? <Finish FinishToHome={FinishToHome}  /> : null}
     </div>
   );
 }

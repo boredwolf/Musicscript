@@ -43,12 +43,12 @@ function Choice() {
   };
 
   return (
-    <div className="h-screen pt-10 background-main">
+    <div className="h-screen pt-10 background-main flex flex-col">
       <h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-50">
         Select the kind of music you like
       </h1>
       <hr className="mt-4 w-1/4 mx-auto"></hr>
-      <div className="flex justify-between w-4/5 m-auto mt-10 ">
+      <div className="mx-auto flex justify-between w-4/5 mt-10 ">
         <button
           className="m-2 px-4 py-2 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 transition duration-500 ease-in-out transform hover:scale-125"
           onClick={showRock}
@@ -108,6 +108,7 @@ function Choice() {
         <div> {componentReggae ? <Reggae /> : null}</div>
         <div> {componentRap ? <Rap /> : null}</div>
       </div>
+      <button className="mx-auto m-12 px-4 py-2 w-1/4 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 focus:bg-white focus:text-purple-700 transition duration-500 ease-in-out">Valider</button>
     </div>
   );
 }
