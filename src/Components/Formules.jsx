@@ -5,7 +5,7 @@ export default function Formules({ScrollToFinish}) {
 
 <div className="w-screen h-screen background-main">
 
-<h1 className="text-center pt-12 w-5/6 mx-auto px-4 text-5xl font-extrabold text-white">
+<h1 className="text-center pt-12 w-5/6 mx-auto px-4 text-5xl font-extrabold text-white text-shadow">
   Price range
 </h1>
 <hr className="mt-4 w-1/4 mx-auto"></hr>
