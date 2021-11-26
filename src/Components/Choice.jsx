@@ -44,7 +44,7 @@ function Choice() {
 
 
   return (
-    <div className="h-screen pt-10">
+    <div className="h-screen pt-10 background-main">
         <h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
   Select the kind of music you like
 </h1>

@@ -9,7 +9,7 @@ const Location = () => {
   }
   console.log(maps)
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center h-screen background-main w-screen">
       <div className="flex justify-center mt-4" >
         <button onClick={(event) => mapscreen(event.target.value)} value="paris" className="m-2 px-4 py-2 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 transition duration-500 ease-in-out ">Paris</button>
         <button onClick={(event) => mapscreen(event.target.value)}  value="lyon"  className="m-2 px-4 py-2 border-solid border-2 border-white text-white text-2xl rounded-full hover:bg-white hover:text-purple-700 transition duration-500 ease-in-out ">Lyon</button>
