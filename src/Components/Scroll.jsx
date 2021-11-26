@@ -30,19 +30,19 @@ const Scroll = ({ScrollToFinish}) => {
         </ScrollPage>
 
         <ScrollPage page={1}>
-          <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), MoveOut(0, 50))}>
           <Location />
           </Animator>
         </ScrollPage>
           
         <ScrollPage page={2}>
-          <Animator animation={batch(Fade(),  MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(),  MoveOut(0, 50))}>
             <Choice />
           </Animator>
         </ScrollPage>
 
         <ScrollPage page={3}>
-          <Animator animation={batch(Fade(), MoveOut(0, -200))}>
+        <Animator animation={batch(Fade(), MoveOut(0, 50))}>
             <Formules ScrollToFinish={ScrollToFinish} />
           </Animator>
         </ScrollPage>
