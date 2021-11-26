@@ -31,7 +31,7 @@ const Scroll = () => {
 
         <ScrollPage page={1}>
           <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
-            <Choice />
+            <BoxContent />
           </Animator>
         </ScrollPage>
 
