@@ -103,7 +103,7 @@ export default Choice;
 
 function Rock() {
   return (
-    <div className="mx-10 py-10 bg-gray-200 rounded-lg mt-10 flex items-center flex-col">
+    <div className="mx-10 py-10 text-gray-50 border-gray-50 border-4 rounded-lg mt-10 flex items-center flex-col">
       <h1 className="text-gray-300 font-bold text-xl pb-2 text-gray-800">
         Rock is the best !!!
       </h1>
