@@ -26,19 +26,19 @@ const Scroll = () => {
     <div>
       <ScrollContainer>
         <ScrollPage page={0}>
-          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -400))}>
+          <Animator animation={batch(Fade(), Sticky())}>
            <Location />
           </Animator>
         </ScrollPage>
 
         <ScrollPage page={1}>
-          <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
             <Choice />
           </Animator>
         </ScrollPage>
 
         <ScrollPage page={2}>
-          <Animator animation={ZoomInScrollOut}>
+          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
             <Formules />
           </Animator>
         </ScrollPage>
