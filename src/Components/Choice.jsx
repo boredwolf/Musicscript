@@ -44,7 +44,7 @@ function Choice() {
 
 
   return (
-    <div className="h-screen pt-10">
+    <div className="h-screen pt-10 background-main">
         <h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
   Select the kind of music you like
 </h1>
@@ -81,7 +81,7 @@ function Choice() {
           Reggae
         </button>
         <button className="rounded-lg text-xl px-4 py-2 bg-gray-300 hover:bg-purple-400  transition duration-700 ease-in-out transform hover:scale-110 "
-        onClick={showReggae}>
+        onClick={showRap}>
           Rap
         </button>
       </div>
@@ -112,7 +112,7 @@ function Rock() {
         src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
         alt="rock-concert"
       />
-      <p className="">Le rock c'est cool</p>
+      <p className="">Enjoy the Rock'n'Roll attitude</p>
     </div>
   );
 }
@@ -125,10 +125,10 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          src="https://pyxis.nymag.com/v1/imgs/3a3/b1f/2141226b8ab1ae07afe4b541ee0d2b0825-11-yic-pop-essay.rsocial.w1200.jpg"
           alt="rock-concert"
         />
-        <p className="">Le rock c'est cool</p>
+        <p className="">Enjoy the best Pop music of your area</p>
       </div>
     );
   }
@@ -141,10 +141,10 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
-          alt="rock-concert"
+          src="http://www.jazzradio.fr/media/news/1bebe8759e23ab6a1b92e1d46e2e7f12.png"
+          alt="jazz-illus"
         />
-        <p className="">Le rock c'est cool</p>
+        <p className="">Jazz never gets old</p>
       </div>
     );
   }
@@ -156,10 +156,10 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
-          alt="rock-concert"
+          src="https://thetravelshots.com/wp-content/uploads/2021/04/dance-music.jpg"
+          alt="electro-illus"
         />
-        <p className="">Le rock c'est cool</p>
+        <p className="">Keep Calm and enjoy the rythm</p>
       </div>
     );
   }
@@ -171,7 +171,7 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          src="https://i2.wp.com/dynamhit.org/wp-content/uploads/2015/02/439970-metal-music-heavy-metal-fans.jpg?fit=1920%2C1200"
           alt="rock-concert"
         />
         <p className="">Le rock c'est cool</p>
@@ -186,7 +186,7 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          src="https://media.timeout.com/images/101659805/image.jpg"
           alt="rock-concert"
         />
         <p className="">Le rock c'est cool</p>
@@ -201,7 +201,7 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          src="https://gonzomusic.fr/files/bob-marley-03.jpg"
           alt="rock-concert"
         />
         <p className="">Le rock c'est cool</p>
@@ -216,10 +216,10 @@ function Pop() {
         </h1>
         <img
           className="w-5/6 h-96 rounded-lg"
-          src="https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg"
+          src="https://i.pinimg.com/originals/6a/a4/bc/6aa4bcba8736155a31eadbd87332dc93.jpg"
           alt="rock-concert"
         />
-        <p className="">Le rock c'est cool</p>
+        <p className="">Le J c'est le S </p>
       </div>
     );
   }

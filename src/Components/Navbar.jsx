@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return (
 <>
-    <nav class="flex justify-between bg-gray-900 text-white w-screen navbar">
+    <nav class="flex justify-between bg-gray-900 text-white w-screen ">
       <div class="px-5 xl:px-12  flex w-full items-center">
         <a class="text-3xl font-bold font-heading" href="#">
          <img class="h-24" src="src/Assets/logoboxifypng.png" alt="logo"/> 

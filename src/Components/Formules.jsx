@@ -3,7 +3,7 @@ import React from 'react'
 export default function Formules() {
     return (
 
-<div className="w-screen">
+<div className="w-screen h-screen background-main">
 
 <h1 className="text-center w-5/6 mx-auto px-4 text-5xl font-extrabold text-gray-900">
   Price range
