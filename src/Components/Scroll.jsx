@@ -17,11 +17,9 @@ import Connexion from "./Connexion";
 import Location from "./Location";
 import Formules from "./Formules";
 import Choice from "./Choice";
-import useScrollBlock from "./useScrollBlock";
+import BoxContent from "./BoxContent";
 
 const Scroll = () => {
-    const [blockScroll, allowScroll] = useScrollBlock();
-    blockScroll ()
   return (
     <div>
       <ScrollContainer>
@@ -38,6 +36,12 @@ const Scroll = () => {
         </ScrollPage>
 
         <ScrollPage page={2}>
+          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
+            <Choice />
+          </Animator>
+        </ScrollPage>
+
+        <ScrollPage page={3}>
           <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
             <Formules />
           </Animator>
