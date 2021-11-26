@@ -30,19 +30,19 @@ const Scroll = () => {
         </ScrollPage>
 
         <ScrollPage page={1}>
-          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), MoveIn(1000, 0), MoveOut(0, -200))}>
             <BoxContent />
           </Animator>
         </ScrollPage>
 
         <ScrollPage page={2}>
-          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), MoveIn(1000, 0), MoveOut(0, -200))}>
             <Choice />
           </Animator>
         </ScrollPage>
 
         <ScrollPage page={3}>
-          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), MoveIn(1000, 0), MoveOut(0, -200))}>
             <Formules />
           </Animator>
         </ScrollPage>
