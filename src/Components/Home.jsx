@@ -1,9 +1,10 @@
 import React from "react";
-import { Navbar } from "reactstrap";
-
+import Navbar from "./Navbar.jsx"
 const Home = ({HomeToConnection}) => {
   return (
-    <div className="w-screen h-screen background-main">     <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
+    <div className="w-screen h-screen background-main">   
+    <Navbar />
+      <div className=" flex items-center justify-between pt-8  pr-16 w-4/5">
         <h1 className="text-6xl font-Josefin   text-right text-white text-shadow w-screen  pr-8    ">
           Welcome <span>here !</span>
         </h1>
